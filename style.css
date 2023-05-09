@@ -34,7 +34,7 @@ body {
     position: absolute;
     color: white;
     font-size: 30px;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-top: 25px;
 }
 
@@ -131,5 +131,39 @@ nav > ul li:hover .sous {
     height: 95vh;
     margin-left: -10px;
     margin-right: -10px;
-    font-size: 35px;
+
+}
+
+.landing-title {
+    font-size:55px;
+    background: linear-gradient(120deg,#379eff 0%,#1e65ff 100%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* scrollTopBtn */
+
+#scrollToTopBtn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 48px;
+    width: 48px;
+    background: transparent;
+}
+
+/* Body page */
+
+.container-body {
+    display: flex;
+}
+
+.title-container {
+    position: absolute;
+    color: black;
 }
