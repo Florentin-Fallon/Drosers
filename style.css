@@ -5,7 +5,8 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: rgba(105, 130, 215, 1);
+
     font-family: Poppins, sans-serif;
 }
 
@@ -26,7 +27,6 @@ body {
     right: 0%;
     top: 0%;
     bottom: 0%;
-    background-color: rgba(39, 61, 134, 1);
     box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
 }
 
@@ -38,20 +38,11 @@ body {
     margin-top: 25px;
 }
 
-.search-bar {
-    position: absolute;
-    width: 40%;
-    height: 25px;
-    border-radius: 6px;
-    border: none;
-    margin-left: 500px;
-    margin-top: 30px;
-}
-
 nav {
+    font-size: 15px;
     width: 100%;
-    margin-top: 88px;
-    background-color: rgba(39, 61, 134, 1);
+    margin-top: 38px;
+    margin-left: 20%;
     position: sticky;
     top: 0px;
 }
@@ -67,7 +58,7 @@ nav ul {
 
 nav ul li {
     float: left;
-    width: 25%;
+    width: 15%;
     text-align: center;
     position: relative;
 }
@@ -75,7 +66,6 @@ nav ul li {
 nav ul::after {
     content: "";
     display: table;
-    clear: both;
 }
 
 .sous {
@@ -136,34 +126,27 @@ nav > ul li:hover .sous {
 
 .landing-title {
     font-size:55px;
-    background: linear-gradient(120deg,#379eff 0%,#1e65ff 100%);
-    background-clip: border-box;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
 }
 
-/* scrollTopBtn */
-
-#scrollToTopBtn {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    border: none;
-    color: black;
-    cursor: pointer;
-    font-size: 18px;
-    line-height: 48px;
-    width: 48px;
-    background: transparent;
+.landing-title span {
+    background: linear-gradient(102.03deg, #ea9578 36.3%, #f1d8d8 134.07%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 /* Body page */
 
-.container-body {
+.container-card {
     display: flex;
 }
 
-.title-container {
-    position: absolute;
+.container-card img {
+    border-radius: 5px;
+}
+
+.text-container {
     color: black;
 }
+
