@@ -6,7 +6,7 @@ html {
 
 body {
     background-color: rgba(39, 61, 134, 1);
-
+    overflow-x: hidden;
     font-family: Poppins, sans-serif;
 }
 
@@ -89,6 +89,7 @@ nav ul::after {
 .sous a {
     padding: 10px;
     border-bottom: none;
+    cursor: pointer;
 }
 
 .sous a:hover {
@@ -120,7 +121,7 @@ nav > ul li:hover .sous {
     position: relative;
     align-items: center;
     justify-content: center;
-    height: 95vh;
+    height: 105vh;
     margin-left: -10px;
     margin-right: -10px;
 
@@ -135,18 +136,71 @@ nav > ul li:hover .sous {
     color: rgba(242, 92, 55, 1)
 }
 
+.svg-left {
+    position: absolute;
+    margin-right: 75%;
+    margin-bottom: 20%;
+}
+
+.svp-right {
+    position: absolute;
+    margin-left: 75%;
+    margin-top: 20%;
+}
 /* Body page */
 
-.container-card {
+.main {
+    margin-bottom: 10%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+.main .content .card {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.main .content .card .left {
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px 0px 0px 5px;
+}
+.main .content .card .left p {
+    margin-bottom: 90px;
+}
+.main .content .card .left .btn-card {
+    border: 1px solid transparent;
+    background-color: orange;
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 60px;
+    text-decoration: none;
+    color: white;
+}
+.main .content .card .right {
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid white;
+}
+.main .content .card .right img {
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+    object-fit: cover;
+}
+
+/* Footer */
+
+.footer {
+    height: 88px;
+    background-color: rgba(39, 61, 134, 1);
+    text-align: center;
+    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
+}
+
+.footer p {
     margin-top: 50px;
 }
-
-.container-card img {
-    border-radius: 5px;
-}
-
-.text-container {
-    color: black;
-}
-
