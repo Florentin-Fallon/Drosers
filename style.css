@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    background-color: rgba(105, 130, 215, 1);
+    background-color: rgba(39, 61, 134, 1);
 
     font-family: Poppins, sans-serif;
 }
@@ -19,6 +19,7 @@ body {
     left: 0px;
     right: 0px;
     top: 0px;
+    background-color: rgba(39, 61, 134, 1);
 }
 
 .background {
@@ -104,7 +105,7 @@ nav a {
 }
 
 nav a:hover {
-    color: orange;
+    color: rgba(242, 92, 55, 1);
     border-bottom: 2px solid black;
 }
 
@@ -130,16 +131,14 @@ nav > ul li:hover .sous {
 }
 
 .landing-title span {
-    background: linear-gradient(102.03deg, #ea9578 36.3%, #f1d8d8 134.07%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: rgba(242, 92, 55, 1)
 }
 
 /* Body page */
 
 .container-card {
     display: flex;
+    margin-top: 50px;
 }
 
 .container-card img {
