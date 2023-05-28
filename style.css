@@ -33,7 +33,8 @@ body {
 
 .title {
     position: absolute;
-    color: white;
+    color: rgba(242, 92, 55, 1);
+    font-weight: 500;
     font-size: 30px;
     margin-left: 50px;
     margin-top: 25px;
@@ -52,6 +53,10 @@ nav ul {
     list-style-type: none;
 }
 
+nav li:hover {
+    color: orange;
+}
+
 .deroulent {
     color: white;
     padding-bottom: 10px;
@@ -63,6 +68,7 @@ nav ul li {
     text-align: center;
     position: relative;
     cursor: pointer;
+    font-weight: 500;
 }
 
 nav ul::after {
@@ -126,6 +132,34 @@ nav > ul li:hover .sous {
     margin-right: -10px;
 
 }
+
+/* Animation Ball de Baseball */
+
+
+
+img {
+    animation: 3s linear 3s infinite alternate slidein;
+    height: 200px;
+    width: 200px;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -200%;
+        height: 300px;
+        width: 100%;
+    }
+    50% {
+        height: 300px;
+        width: 100%;
+        margin-left: 45%;
+    }
+    to {
+        margin-left: 450%;
+        height: 300px;
+        width: 100%;
+    }
+  }
 
 .landing-title {
     font-size:55px;
@@ -195,12 +229,14 @@ nav > ul li:hover .sous {
 /* Footer */
 
 .footer {
-    height: 88px;
-    background-color: rgba(39, 61, 134, 1);
+    position: sticky;
+    bottom: 0;
+    right: 0;
+    left: 0;
     text-align: center;
-    box-shadow: 0px 4px 42px rgba(0, 0, 0, 0.25);
 }
 
 .footer p {
-    margin-top: 50px;
+    color: white;
+    font-size: 20px;
 }
